@@ -1,12 +1,12 @@
-package org.example;
+//package org.example;
 
-import java.io.*;
+//import java.io.*;
 
 
-public class Example {
-    public void reader() {
+//public class Example {
+//    public void reader() {
 //        try {
-//            FileReader read = new FileReader("example.txt");
+//            FileReader read = new FileReader("");
 //            BufferedReader br = new BufferedReader(read);
 //
 //            String line;
@@ -17,16 +17,16 @@ public class Example {
 //        } catch (IOException e) {
 //            System.out.println("Error reading file" + e.getMessage());
 //        }
-        try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"));
-            writer.write("Hello Emmanuel");
-            writer.newLine();
-            writer.write("Welcome to jave I/O");
-            writer.close();
-        } catch (IOException e) {
-            System.out.println("Error writing file" + e.getMessage());
-        }
-    }
+//        try {
+//            BufferedWriter writer = new BufferedWriter(new FileWriter(""));
+//            writer.write("Hello Emmanuel");
+//            writer.newLine();
+//            writer.write("Welcome to jave I/O");
+//            writer.close();
+//        } catch (IOException e) {
+//            System.out.println("Error writing file" + e.getMessage());
+//        }
+//    }
 
-}
+//}
 
