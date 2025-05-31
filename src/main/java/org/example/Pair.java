@@ -1,5 +1,6 @@
 package org.example;
 
+//4. Implement a generic class Pair<K, V> to represent a key-value pair.
 public class Pair<K,V> {
     private K key;
     private V value;

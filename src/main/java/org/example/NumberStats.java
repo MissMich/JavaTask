@@ -2,6 +2,8 @@ package org.example;
 
 import java.util.List;
 
+//3. Create a generic class NumberStats<T extends Number> with a method to compute the average of a list.
+
 public class NumberStats<T extends Number> {
     private List<T> numbers;
 

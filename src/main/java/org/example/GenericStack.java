@@ -3,6 +3,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.EmptyStackException;
 
+//6. Create a generic stack class GenericStack<T> with push, pop, and peek methods.
 public class GenericStack<T> {
     private ArrayList<T> stack;
 

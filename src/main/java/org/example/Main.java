@@ -49,6 +49,7 @@ public class Main {
         }
     }
 
+//2. Write a generic method contains(T[] array, T item) to check if the array contains a given item.
     public static <T> boolean contains(T[] array, T item) {
         for(T element: array) {
             if (element.equals(item)) {
@@ -63,6 +64,8 @@ public class Main {
 //        System.out.println(contains(fruits, "orange"));
 //        System.out.println(contains(numbers, 8));
 
+
+//    5. Write a method that swaps two elements in a generic array.
     public static <T> void swap(T[] array, int i, int j) {
         if (array == null || i < 0 || j < 0 || i >= array.length || j >= array.length) {
             throw new IllegalArgumentException("Invalid index or null array");
@@ -78,6 +81,8 @@ public class Main {
 //        swap(names, 0,2);
 //        System.out.println(java.util.Arrays.toString(names));
 
+
+//    7. Implement a method copyList(List<? super T> dest, List<? extends T> src) to copy elements generically.
     public static <T> void copyList(List<? super T> dest, List<? extends T> src) {
         for (T item: src) {
             dest.add(item);
@@ -89,6 +94,8 @@ public class Main {
 //    copyList(destination, source);
 //        System.out.println(destination);
 
+
+//    8. Write a generic method to find the maximum element in an array using Comparable<T>.
     public static <T extends Comparable<T>> T findMaximum(T[] array) {
         if (array == null || array.length == 0) {
             throw new IllegalArgumentException();

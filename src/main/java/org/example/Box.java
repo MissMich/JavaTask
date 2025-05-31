@@ -1,5 +1,6 @@
 package org.example;
 
+//1. Create a generic class Box<T> with methods to set and get the item.
 public class Box<T> {
     private T item;
 
