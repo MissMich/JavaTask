@@ -5,15 +5,10 @@ import java.util.List;
 //3. Create a generic class NumberStats<T extends Number> with a method to compute the average of a list.
 
 public class NumberStats<T extends Number> {
-    private List<T> numbers;
 
-    public NumberStats(List<T> numbers) {
-        this.numbers = numbers;
-    }
-
-    public double avarageNum() {
+    public double avarageNum(List<T> numbers) {
         if  (numbers == null || numbers.isEmpty()) {
-            return 0.0;
+            throw new IllegalArgumentException();
         }
 
         double sum = 0.0;

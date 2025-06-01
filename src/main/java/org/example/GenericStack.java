@@ -28,6 +28,14 @@ public class GenericStack<T> {
         }
         return stack.getLast();
     }
+
+    public boolean isEmpty() {
+        return stack.isEmpty();
+    }
+
+    public int size() {
+        return stack.size();
+    }
 }
 
 //GenericStack<String> stackList = new GenericStack<>();
