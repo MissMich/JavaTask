@@ -1,9 +1,26 @@
 package org.example;
 
+import java.io.File;
+import java.net.URL;
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        Example example = new Example();
+
+        // Get the resource file
+        ClassLoader classLoader = Main.class.getClassLoader();
+        URL resourceUrl = classLoader.getResource("example.txt");
+
+        if (resourceUrl == null) {
+            System.out.println("File not found in resources!");
+            return;
+        }
+
+        File inputFile = new File(resourceUrl.getFile());
+        String outputPath = "output.txt";
+
+        example.reader(inputFile.getAbsolutePath(), outputPath);
     }
 
 //    public static void gradeRange() {
